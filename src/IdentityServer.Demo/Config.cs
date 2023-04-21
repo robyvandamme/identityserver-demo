@@ -35,5 +35,15 @@ public static class Config
                 AllowOfflineAccess = true,
                 AllowedScopes = { "openid", "profile", "scope2" }
             },
+            new Client
+            {
+                ClientId = "integration",
+                AllowedGrantTypes = GrantTypes.ClientCredentials,
+                ClientSecrets =
+                {
+                    new Secret("not-exactly-secret".Sha256())
+                },
+                AllowedScopes = { "scope1" },
+            },
         };
 }
