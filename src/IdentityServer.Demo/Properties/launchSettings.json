@@ -2,11 +2,11 @@
   "profiles": {
     "SelfHost": {
       "commandName": "Project",
-      "launchBrowser": true,
+      "launchBrowser": false,
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
-      "applicationUrl": "https://localhost:6002"
+      "applicationUrl": "https://localhost:6100;http://localhost:6101"
     }
   }
 }
