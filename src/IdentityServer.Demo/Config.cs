@@ -35,6 +35,7 @@ public static class Config
                 AllowOfflineAccess = true,
                 AllowedScopes = { "openid", "profile", "scope2" }
             },
+            // integration test client
             new Client
             {
                 ClientId = "integration",
